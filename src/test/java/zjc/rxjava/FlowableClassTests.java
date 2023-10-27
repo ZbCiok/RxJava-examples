@@ -2,9 +2,9 @@ package zjc.rxjava;
 
 import org.junit.jupiter.api.Test;
 
-public class FlowableCTests {
+public class FlowableClassTests {
 
-    FlowableC flowableC = new FlowableC();
+    FlowableClass flowableC = new FlowableClass();
 
     @Test
     public void flowable01() {
@@ -21,5 +21,8 @@ public class FlowableCTests {
         flowableC.flowable03();
     }
 
-
+    @Test
+    public void flowable04() {
+        flowableC.flowable04();
+    }
 }
