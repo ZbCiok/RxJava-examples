@@ -1,4 +1,4 @@
-package zjc.rxjava;
+package zjc.examples.rxjava;
 
 import io.reactivex.rxjava3.core.BackpressureStrategy;
 import io.reactivex.rxjava3.core.Flowable;
