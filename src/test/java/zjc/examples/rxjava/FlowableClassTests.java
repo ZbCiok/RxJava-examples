@@ -4,25 +4,25 @@ import org.junit.jupiter.api.Test;
 
 public class FlowableClassTests {
 
-    FlowableClass flowableC = new FlowableClass();
+    FlowableClass flowableClass = new FlowableClass();
 
     @Test
     public void flowable01() {
-        flowableC.flowable01();
+        flowableClass.create01();
     }
 
     @Test
     public void flowable02() {
-        flowableC.flowable02();
+        flowableClass.just02();
     }
 
     @Test
     public void flowable03() {
-        flowableC.flowable03();
+        flowableClass.fromIterable03();
     }
 
     @Test
     public void flowable04() {
-        flowableC.flowable04();
+        flowableClass.fromIterable04();
     }
 }

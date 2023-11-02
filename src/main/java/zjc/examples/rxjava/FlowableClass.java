@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class FlowableClass {
-    public void flowable01() {
+    public void create01() {
         Flowable<String> flowable = Flowable.create(emitter -> {
             emitter.onNext("Hello");
             emitter.onNext("World");
@@ -17,16 +17,16 @@ public class FlowableClass {
         }, BackpressureStrategy.BUFFER);
     }
 
-    public void flowable02() {
+    public void just02() {
         Flowable<Integer> flowable = Flowable.just(1, 2, 3, 4, 5);
     }
 
-    public void flowable03() {
+    public void fromIterable03() {
         List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
         Flowable<String> flowable = Flowable.fromIterable(names);
     }
 
-    public void flowable04() {
+    public void fromIterable04() {
         Flowable<String> flowable = Flowable.fromIterable(Arrays.asList("one", "three", "two"));
         flowable.subscribe(new Subscriber<String>() {
 
